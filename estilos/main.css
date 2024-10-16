@@ -1,0 +1,180 @@
+html {
+    font-size: 16px;
+}
+/*Usar mediasquery para hacer adaptable la letra a un diferente dispositivo*/
+
+@media screen and (max-width:400px) {
+    html {
+        font-size: 4px;
+    }
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.882;
+    color: blue;
+    margin: 0;
+    padding: 12px;
+}
+/*estilos a los links*/
+a{
+    color: #cf1767;
+    transition: all 0.3s ease-in-out;
+}
+a:hover,
+a:focus,
+a:active {
+    color: #000000;
+}
+a:hover,
+a:active {
+    outline: 0;
+}
+/*tipografia*/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5,.h6{
+    font-family: "Frank Ruh1 libre", serif;
+    font-weight: 500;
+    font-size: normal;
+    color: #ffff;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+    margin-top: 6rem;
+    margin-bottom: 16rem;
+}
+/*Estilos del Header*/
+.s-header{
+    /*posicionamiento absoluto del header*/
+    position: absolute;
+    /*2 rem desde la parte supeior*/
+    top: 2rem;
+    /*alineo a la izquierda del contenedor*/
+    left: 0;
+    /*ancho del contenedor*/
+    width: 100%;
+    /*borde blanco de 1 px*/
+    border: 1px solid white;
+    /*altura del header de 78px*/
+    height: 78px;
+    /*centrar el texto*/
+    text-align: center;
+}
+.s-header.sticky{
+    /*fondo negro cuando el header es fijo*/
+    background: #050505;
+    /*header fijado en la parte superior cuando desplazamos la pag*/
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.s-header-logo{
+    /*se muestra en linea el logo con los otros elementos*/
+    display: inline-block;
+    /*margen de 6px*/
+    margin: 6px 0 0 0;
+    /*poisicion absoluta dentro del header*/
+    position: absolute;
+    /*centro del logo con 50% de altura de contenedor*/
+    top: 50%;
+    /*el logo se coloca en el borde izquierdo del header a 40px*/
+    left: 40px;
+}
+.s-header-logo a{
+    /*enlace del logo*/
+    display: block;
+    /*margenes y relleno*/
+    margin: 0;
+    padding: 0;
+    /*Borde*/
+    outline: 0;
+    border: none;
+    /*tansicion suave en .3s en el enlace*/
+    transition: all .3s;
+}
+.s-header-logo img{
+    /*tamaño del logo*/
+    width: 132px;
+    height: 36px;
+    /*margenes*/
+    margin: 0;
+}
+.header-nav-wrap{
+    /*contenedor de naavegacion*/
+    display: inline-block;
+}
+.header-nav-wrap ul {
+    /*lista de navegacion*/
+    display: inline-block;
+    /*estilo de lista*/
+    list-style: none;
+    /*margen izquierdo*/
+    margin-left: 0;
+    /*margen superior*/
+    margin-top: 18px;
+}
+.header-nav-wrap li {
+    /*elementos de la lista*/
+    display: inline-block;
+    /*relleno izquierda*/
+    padding-left: 0;
+}
+.header-nav-wrap li a {
+    /*enlace de bloque */
+    display: block;
+    /*altura calculada*/
+    line-height: calc(78px-(18px*2))
+}
+.header-main-nav {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 0 4px;
+    z-index: 2;
+    position: static;
+}
+
+.header-main-nav li {
+    margin: 0 2rem;
+}
+
+.header-main-nav a {
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.header-main-nav a:hover,
+.header-main-nav a:focus,
+.header-main-nav a:active {
+    color: #ffffff;
+}
+
+.header-main-nav .current a {
+    color: #ffffff;
+}
+
+.header-social {
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.header-social li {
+    margin-right: 1rem;
+}
+
+.header-social li:last-child {
+    margin-right: 0;
+}
+
+.header-social li a {
+    color: rgba(255, 255, 255, 0.5);
+}
